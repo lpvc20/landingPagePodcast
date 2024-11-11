@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #222;
+    padding: 20px 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Portada del episodio (mobile first) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e6f7f7;
+    color: #333;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #008ba3;
+}
+
+.hero-image {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección "Sobre el episodio" */
+.about {
+    padding: 30px 20px;
+    background-color: #fefefe;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Footer estilo barra */
+footer {
+    background-color: #a5a2a2;
+    padding: 15px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-media li a img {
+    width: 25px;
+    height: 25px;
+    margin-inline: 50px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 1.8em;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        padding: 60px 40px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+        padding-right: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .about {
+        padding: 40px;
+        font-size: 1.2em;
+    }
+}
+
+
